@@ -8,10 +8,13 @@
 
 ## Screenshots
 Home
+
 ![home screen](screenshots/home.png)
 
 Day Details
+
 ![details screen](screenshots/details.png)
+
 ## Notes
 - Used Model-View-Presenter as application architecture
 - Used Retrofit to connect to weatherbit.io API
