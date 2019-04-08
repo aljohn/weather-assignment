@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/details_header_height"
+                android:background="@color/colorPrimary"
+                android:paddingStart="@dimen/default_screen_horizontal_margin"
+                android:paddingEnd="@dimen/default_screen_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    tools:text="12 Sep 2019"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/textColorAccent"
+                    android:textSize="@dimen/subtitle_text_size" />
+
+                <TextView
+                    android:id="@+id/txt_degrees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_date"
+                    android:textColor="@color/textColorAccent"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold"
+                    tools:text="20 C" />
+
+                <TextView
+                    android:id="@+id/txt_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_degrees"
+                    android:textColor="@color/textColorAccent"
+                    android:textSize="@dimen/default_text_size"
+                    tools:text="Overcast clouds" />
+
+                <ImageView
+                    android:id="@+id/img_weather_icon"
+                    android:layout_width="@dimen/header_image_size"
+                    android:layout_height="@dimen/header_image_size"
+                    android:layout_alignTop="@id/txt_date"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerInside"
+                    tools:src="@drawable/a01d" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingStart="@dimen/default_screen_horizontal_margin"
+                android:paddingEnd="@dimen/default_screen_horizontal_margin"
+                android:showDividers="middle|end"
+                android:divider="@drawable/list_divider"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/include_wind_details" />
+                <include layout="@layout/include_temperature_details" />
+                <include layout="@layout/include_other_details" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

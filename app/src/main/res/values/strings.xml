@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="today">Today</string>
+    <string name="location_permission_rationale">The location permission is needed to show weather information in your area.</string>
+    <string name="ok">OK</string>
+    <string name="failed_fetching_weather_data">Failed fetching weather data.</string>
+    <string name="try_again">Try Again</string>
+    <string name="temp_degrees">%1$s°C</string>
+    <string name="wind">Wind</string>
+    <string name="gust_speed">Gust Speed (m/s)</string>
+    <string name="speed">Speed (m/s)</string>
+    <string name="direction">Direction</string>
+    <string name="temperature">Temperature</string>
+    <string name="average">Average</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="apparent_max">Apparent Max</string>
+    <string name="apparent_min">Apparent Min</string>
+    <string name="others">Others</string>
+    <string name="chance_of_rain">Chance of Rain</string>
+    <string name="pressure">Pressure (mb)</string>
+    <string name="humidity">Humidity</string>
+    <string name="percentage">%1$s\%%</string>
+</resources>
